@@ -1,4 +1,5 @@
 import { Navbar } from "flowbite-react"
+import { Link } from "react-router-dom"
 
 
 export default function Navbar1(){
@@ -12,36 +13,30 @@ export default function Navbar1(){
     to="/navbars"
   >
     <img
-      src="https://flowbite.com/docs/images/logo.svg"
+      src="https://s3-eu-west-1.amazonaws.com/ie.smooth.careers-logo/ErnPJ-0mjSfZ8-Go"
       className="mr-3 h-6 sm:h-9"
       alt="Flowbite Logo"
     />
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-      Flowbite
+      FullyFilmy
     </span>
   </Navbar.Brand>
   <Navbar.Toggle />
   <Navbar.Collapse>
-    <Navbar.Link
-      href="/navbars"
-      active={true}
-    >
+  <Link to="/">
       Home
-    </Navbar.Link>
-    <Navbar.Link
-
-      to="/navbars"
-    >
-      About
-    </Navbar.Link>
+      </Link>
+   <Link to="/wishlist">
+      Wishlist
+      </Link>
+      <Link to="/shoppingcart">
+      Shopping Cart
+      </Link>
+      <Link to="/checkout">
+      Checkout
+      </Link>
     <Navbar.Link href="/navbars">
-      Services
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Pricing
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Contact
+      Track My Order
     </Navbar.Link>
   </Navbar.Collapse>
 </Navbar>
